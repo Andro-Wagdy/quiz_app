@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz_app/Sreen/LoginScreen.dart';
+import 'package:quiz_app/Sreen/OpeningScree.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,7 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 202, 74, 20)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'quiz app'),
+      home: LoginScreen(),
     );
   }
 }

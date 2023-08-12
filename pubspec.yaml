@@ -57,6 +57,9 @@ flutter:
   assets:
     - images/background.jpg
     - images/home_page.png
+    - images/alien.png
+    - images/fingerprint.png
+    
      
 
   # An image asset can refer to one or more resolution-specific "variants", see
