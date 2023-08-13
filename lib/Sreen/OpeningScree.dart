@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz_app/Sreen/LoginScreen.dart';
 
 class OpeningScreen extends StatelessWidget {
   const OpeningScreen({super.key});
@@ -44,15 +45,20 @@ class OpeningScreen extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) => const LoginScreen(),
+                    ),
+                  );
+                },
                 child: Text(
                   "Start",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.green,
-                  minimumSize: Size(200, 50),
-                ),
+                    primary: Colors.green, minimumSize: Size(200, 50.0)),
               ),
             ),
           ],

@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:quiz_app/Sreen/CategoryScreen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -12,7 +14,6 @@ class LoginScreen extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         color: Colors.green,
         child: Column(
-          
           children: [
             Image.asset(
               "images/alien.png",
@@ -92,7 +93,14 @@ class LoginScreen extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.01,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) => CategoryScreen(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'Login',
                         style: TextStyle(
