@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 202, 74, 20)),
         useMaterial3: true,
       ),
-      home: ScoreScreen(),
+      home: LoginScreen(),
     );
   }
 }
