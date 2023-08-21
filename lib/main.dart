@@ -2,11 +2,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quiz_app/Sreen/LoginScreen.dart';
-import 'package:quiz_app/Sreen/OpeningScree.dart';
-import 'package:quiz_app/Sreen/CategoryScreen.dart';
-import 'package:quiz_app/Sreen/QuizScreen.dart';
-import 'package:quiz_app/Sreen/ScoreScreen.dart';
+import 'package:quiz_app/Sreens/LoginScreen.dart';
+import 'package:quiz_app/Sreens/OpeningScreen.dart';
+import 'package:quiz_app/Sreens/CategoryScreen.dart';
+import 'package:quiz_app/Sreens/QuizScreen.dart';
+import 'package:quiz_app/Sreens/ScoreScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 202, 74, 20)),
         useMaterial3: true,
       ),
-      home: LoginScreen(),
+      home: OpeningScreen(),
     );
   }
 }
